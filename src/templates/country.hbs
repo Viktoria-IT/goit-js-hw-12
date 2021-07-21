@@ -1,17 +1,9 @@
-<div class="country-card">
+<ul>
+    {{#each this}}
     <div class="country-thumb">
-        <img class="country-img" src="{{flag}}" alt="flag">
-        <h2>{{name}}</h2>
-    </div>
-    <div>
-        <p><span class="country-text">Capital:</span> {{capital}}</p>
-        <p><span class="country-text">Population:</span> {{population}}</p>
-        <p><span class="country-text">Languages:</span></p>
-        <ul>
-            {{#each languages}}
-            <li>{{this.name}}</li>
-            {{/each}}
-        </ul>
-        </ul>
-    </div>
-</div>
+       <img class="country-img" src="{{this.flag}}" alt="flag">
+       <h3>{{this.name}}</h3>
+    </div>   
+    {{/each}}
+    
+</ul>

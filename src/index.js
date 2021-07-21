@@ -1,8 +1,8 @@
 import './css/styles.css';
-import countryCardTpl from '../src/templates/country_tmpl.hbs';
-import countriesTpl from '../src/templates/countries.hbs';
+import countryCardTpl from '../src/templates/country_t.hbs';
+import countriesTpl from '../src/templates/country.hbs';
 import API from './js/fetchCountries';
-import getRefs from './js/getrefs';
+import getRefs from './js/get';
 import Notiflix from "notiflix";
 
 const debounce = require('lodash.debounce');
